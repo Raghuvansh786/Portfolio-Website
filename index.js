@@ -7,7 +7,6 @@ const Project = require("./models/project");
 const fileUpload = require("express-fileupload");
 app.use(express.json());
 app.use(cors());
-app.use("/uploads", express.static('uploads'))
 
 const uri = process.env.ATLAS_URI;
 const PORT = process.env.PORT || 3002;
