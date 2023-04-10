@@ -20,7 +20,7 @@ app.use(fileUpload())
 
 
 app.post('/uploadNewProject', async (req, res) => {
-        console.log("This is req.body", req.body);
+        //console.log("This is req.body", req.body);
         const images = Array.from(JSON.parse(req.body.Images));
 
         const imagesLinks = [];
@@ -61,7 +61,7 @@ app.get('/project/:category', async (req, res)=>{
         const category = req.params.category;
         console.log(" The category we got is: ", category)
         const response = await Project.find({"category":category});
-        console.log(response);
+        //console.log(response);
         res.json(response);
 })
 // ------ To get the details of a specific project-----
@@ -69,7 +69,7 @@ app.get('/projectDetails/:id', async (req, res)=>{
         const id = req.params.id;
         console.log(" The id we got is: ", id)
         const response = await Project.findById(id);
-        console.log(response);
+        //console.log(response);
         res.json(response);
 })
 
