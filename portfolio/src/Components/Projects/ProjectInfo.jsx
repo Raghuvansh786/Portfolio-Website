@@ -19,15 +19,31 @@ function ProjectInfo(props) {
             .catch((err) => { console.error("Error occured while sending request: ", err); })
     }, [id])
 
-    var category=project.category;
-    var url ="";
-
-    if(category === "Android") {
-       url ="/android";
-    }else if(category ==="MERN") {
+    var category = project.category;
+    var url = "";
+    var technologies = []
+    if (category === "Android") {
+        url = "/android";
+        if (project.name === "LogEm") {
+            technologies = ["Firebase FireStore Database", "Git/Github for Version Control", "External libraries for UI/UX", "Youtube for demonstration video"]
+        } else {
+            technologies = ["Firebase Messaging Service", "Firebase Tokens/Sessions", "Android Studio (IDE)", "User Access Management"]
+        }
+    } else if (category === "MERN") {
         url = "/MERN";
-    }else{
+        if (project.name === "To-Do List App") {
+            technologies = ["MongoDB NoSQL Database", "React UI/UX", "Microservices Architecture","Git/GitHub for Version Control"]
+        } else {
+            technologies = ["Middleware to access data ", "React UI/UX", "Microservices Architecture","Git/GitHub for Version Control"]
+        }
+    } else {
         url = "/HTML";
+
+        if (project.name === "Royal Wedding") {
+            technologies = ["HTML link Tags", "CSS for styling", "Tabel Tags for schedule display"]
+        } else {
+            technologies = ["HTML media Tags", "CSS for styling", "Image/Video rendering"]
+        }
     }
 
     console.log("The details of the project are: ", project)
@@ -44,12 +60,14 @@ function ProjectInfo(props) {
                     <div className="cell portfolio-meta small-6 medium-2 large-3">
                         <h6>Technologies</h6>
                         <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
+                            {technologies.map((eachTeach) => {
+                                return (
+                                    <li>{eachTeach}</li>
+                                )
+                            })}
                         </ul>
-                        <a className="button expanded" href={project.demo}>Live Demo</a>
-                        <a className="button expanded" href={project.github}>GitHub Repo</a>
+                        <a className="button expanded" href={project.demo} target="_blank" rel="noreferrer">Live Demo</a>
+                        <a className="button expanded" href={project.github} target = "_blank" rel="noreferrer">GitHub Repo</a>
                     </div>
                 </div>
 

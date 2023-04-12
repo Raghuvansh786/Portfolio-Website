@@ -7,7 +7,7 @@ function Index() {
             <article className="grid-container portfolio-intro">
                 <div>
                     <h1>Creativity meets Technology.</h1>
-                    <p className="lead text-light">A Full-Stack Web Developer passionate about creating interactive applications and experiences on the web</p>
+                    <p className="lead text-light">A Software/Full-Stack Developer  passionate about creating interactive applications and experiences on the web</p>
                 </div>
             </article>
 

@@ -3,7 +3,7 @@ import Layout from "../../About/Landing/layout";
 import Project from "../ProjectsOverView";
 function AndroidProjects () {
 
-    const technologies = ["Advanced in SQL,PHP.", "Good Communicator", "Great Listner","Fluent in English, Hindi and Punjabi.","Database Creation and Management.","Customer-Service Oriented","Strong Desire for constant learning and growth."]
+    const technologies = ["Android Studio (IDE)", "Java (Backend)", "External Libraries (UI/UX)","Firebase FireStore","FireBase Messaging Service","Git (Version Control)","NoSQL Database"]
     return (
         <div>
         <Layout/>

@@ -3,7 +3,7 @@ import React, { } from "react";
 import Layout from "../../About/Landing/layout";
 import Projects from "../ProjectsOverView";
 function JavaScriptProjects() {
-    const technologies = ["Advanced in SQL,PHP.", "Good Communicator", "Great Listner","Fluent in English, Hindi and Punjabi.","Database Creation and Management.","Customer-Service Oriented","Strong Desire for constant learning and growth."]
+    const technologies = ["MongoDB for NoSQL Database", "React (UI/UX)", "Express for HTTP and API endpoints","Node.js to run server-side code ","Heroku to deploy webapp","Microservices architecture","Git/GitHub for version control"]
     return (
         <div>
             <Layout/>

@@ -3,7 +3,7 @@ import Layout from "../../About/Landing/layout";
 import Projects from "../ProjectsOverView";
 
 function HtmlProjects() {
-    const technologies = ["Advanced in SQL,PHP.", "Good Communicator", "Great Listner","Fluent in English, Hindi and Punjabi.","Database Creation and Management.","Customer-Service Oriented","Strong Desire for constant learning and growth."]
+    const technologies = ["Brackets (IDE)", "Live Server", "HTML Tags","CSS (UI/UX)","Heroku (Deployment)"]
     return(
         <div>
             <Layout/>

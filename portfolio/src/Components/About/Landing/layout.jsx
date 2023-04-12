@@ -15,7 +15,7 @@ class Layout extends Component {
                         <div className="cell shrink"><img className="thumbnail" src={Picture} alt="This is a profile Img" /></div>
                         <div className="cell auto">
                             <h5>Raghuvansh Raj Giri</h5>
-                            <p className="text-light">Full Stack Developer</p>
+                            <p className="text-light">Software/Full-Stack Developer</p>
                             <Link to="/about">Know More →</Link>
                         </div>
                     </div>
